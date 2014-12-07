@@ -1,7 +1,24 @@
 <html>
 <head>
 <script type="text/javascript">
-	alert("hello");
+
+	//加载前执行
+	alert("1");
+	
+	//在文档完全加载后执行
+	window.onload = function () {
+		alert("3");
+	}
 </script>
 </head>
+
+<body>
+
+	<button></button>
+</body>
+
+<script type="text/javascript">
+	alert("2");//dom加载完后执行
+</script>
+
 </html>
