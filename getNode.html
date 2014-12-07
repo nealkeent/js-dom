@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script type="text/javascript">
+		window.onload = function (){
+			
+			//1获取所有li 节点
+			var lis = document.getElementsByTagName("li");
+			alert(lis.length);
+
+			//2 根据id 获取节点
+			var la = document.getElementById("la1");
+			alert(la);
+
+			//3 根据节点name属性获取
+			var names = document.getElementsByName("gender");
+			alert(names.length);
+
+		
+		}	
+	</script>
+	
+</head>
+<body>
+	<ul>
+		<li id="la1">Java</li>
+		<li>javascript</li>
+		<li>python</li>
+		<li>Lisp</li>
+
+	</ul>	
+	
+	<input type="radio" name="gender" value="male"/>Male
+	<input type="radio" name="gender" value="female"/>Female
+</body>
+</html>
