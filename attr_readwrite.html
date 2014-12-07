@@ -1,0 +1,32 @@
+<html>
+<head>
+	<script type="text/javascript">
+		window.onload = function (){
+			
+			//获取元素
+			var name = document.getElementById("name");
+			alert(name.value);
+
+			//修改值
+			name.value="Tom"
+
+		
+		}	
+	</script>
+	
+</head>
+<body>
+	<ul>
+		<li id="la1">Java</li>
+		<li>javascript</li>
+		<li>python</li>
+		<li>Lisp</li>
+
+	</ul>	
+	
+	<input type="radio" name="gender" value="male"/>Male
+	<input type="radio" name="gender" value="female"/>Female
+
+	name:<input type="text" name="name" value="Neal" id="name"/>
+</body>
+</html>

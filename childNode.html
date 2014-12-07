@@ -1,0 +1,39 @@
+<html>
+<head>
+	<script type="text/javascript">
+		window.onload = function (){
+			
+			//1获取节点
+			var languages = document.getElementById("language");
+
+			//childNodes 属性，ul所有的子节点
+			//alert(languages.childNodes.length);
+
+
+			var langLi = document.getElementsByTagName("li");
+			//alert(langLi.length);
+
+			//firstChild，lastChild方法 
+			////alert(languages.firstChild);
+			//alert(languages.lastChild);
+
+			//读节点的值
+			var java = document.getElementById("la1");
+			alert(java.firstChild.nodeValue);	
+		}	
+	</script>
+	
+</head>
+<body>
+	<ul id="language">
+		<li id="la1">Java</li>
+		<li>javascript</li>
+		<li>python</li>
+		<li>Lisp</li>
+
+	</ul>	
+	
+	<input type="radio" name="gender" value="male"/>Male
+	<input type="radio" name="gender" value="female"/>Female
+</body>
+</html>
