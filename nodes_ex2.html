@@ -1,0 +1,40 @@
+<html>
+<head>
+	<script type="text/javascript">
+		window.onload = function (){
+			//为每个li的文本添加^^符号，如果有则去除
+
+			var liNodes = document.getElementsByTagName("li");
+			
+			var reg = /^\^{2}/g;
+			
+			for(var i =0;i<liNodes.length;i++){
+				liNodes[i].onclick=function(){
+					var val = this.firstChild.nodeValue;
+					
+					if(reg.test(val)){
+						val = val.replace(reg,"");
+					}else{
+						val = "^^"+val;
+					}
+
+					this.firstChild.nodeValue=val;		
+				}
+			}		
+		}	
+	</script>
+	
+</head>
+<body>
+	<ul id="language">
+		<li id="la1">Java</li>
+		<li>javascript</li>
+		<li>python</li>
+		<li>Lisp</li>
+
+	</ul>	
+	
+	<input type="radio" name="gender" value="male"/>Male
+	<input type="radio" name="gender" value="female"/>Female
+</body>
+</html>
